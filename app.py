@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 # Load the Excel file
-df = pd.read_excel("Combined_Staff_updated.xlsx")
+df = pd.read_excel("Combined Staff_updated.xlsx")
 
 # Remove rows with missing barcodes or product names
 df = df.dropna(subset=["Product", "Bar Code"])
